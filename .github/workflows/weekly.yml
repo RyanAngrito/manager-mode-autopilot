@@ -1,0 +1,38 @@
+name: Manager Mode ON - weekly autopilot
+on:
+  schedule:
+    - cron: '0 1 * * 0'   # Sundays 01:00 UTC = 08:00 WIB (refills the week)
+  workflow_dispatch: {}    # lets you run it manually from the Actions tab
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - name: Generate post images
+        run: python generate_all.py
+      - name: Commit generated images
+        run: |
+          git config user.name "mmo-bot"
+          git config user.email "bot@managermode.on"
+          git add posts state.json || true
+          git commit -m "weekly: generate posts" || echo "nothing to commit"
+          git push
+      - name: Wait for raw CDN
+        run: sleep 25
+      - name: Schedule to Buffer
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
+          BUFFER_CHANNEL_ID: ${{ secrets.BUFFER_CHANNEL_ID }}
+          GH_REPO: ${{ github.repository }}
+          GH_BRANCH: ${{ github.ref_name }}
+        run: python buffer_schedule.py
+      - name: Save state
+        run: |
+          git add state.json || true
+          git commit -m "weekly: update state" || echo "no state change"
+          git push || true
