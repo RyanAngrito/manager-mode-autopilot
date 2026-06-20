@@ -1,8 +1,8 @@
 name: Manager Mode ON - weekly autopilot
 on:
   schedule:
-    - cron: '0 1 * * 0'   # Sundays 01:00 UTC = 08:00 WIB (refills the week)
-  workflow_dispatch: {}    # lets you run it manually from the Actions tab
+    - cron: '0 1 * * 0'   # Sundays 01:00 UTC = 08:00 WIB
+  workflow_dispatch: {}
 permissions:
   contents: write
 jobs:
@@ -13,13 +13,20 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.11'}
       - run: pip install -r requirements.txt
+      - name: Ensure Poppins font
+        run: |
+          mkdir -p fonts
+          if [ ! -f fonts/Poppins-Medium.ttf ]; then
+            curl -fL -o fonts/Poppins-Medium.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/poppins/Poppins-Medium.ttf
+          fi
+          ls -la fonts
       - name: Generate post images
         run: python generate_all.py
       - name: Commit generated images
         run: |
           git config user.name "mmo-bot"
           git config user.email "bot@managermode.on"
-          git add posts state.json || true
+          git add posts state.json fonts || true
           git commit -m "weekly: generate posts" || echo "nothing to commit"
           git push
       - name: Wait for raw CDN
