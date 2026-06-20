@@ -1,0 +1,70 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "type": "before_after",
+      "tag": "BEFORE / AFTER",
+      "off": "3 jam tiap minggu cuma buat ngerapiin slide laporan.",
+      "on": "Sekarang 30 menit. AI yang bikin, aku yang mikir.",
+      "caption": "OFF: 3 jam tiap minggu habis cuma buat ngerapiin slide laporan.\nON: sekarang 30 menit — AI yang nyusun, aku yang mikir & ambil keputusan.\nIni soal punya waktu & energi buat hal yang beneran dinilai atasan.\n#managermodeon #budakkorporat #AIuntukkerja #produktivitas"
+    },
+    {
+      "id": 2,
+      "type": "prompt",
+      "tag": "PROMPT",
+      "kicker": "PROMPT DROP",
+      "headline": "Biar proposalmu nggak ditolak: kasih angka.",
+      "prompt": "Rumuskan masalah ini jadi 1 kalimat yang ada angkanya, lalu hitung 'biaya kalau dibiarkan' dalam waktu atau uang: [masalahmu]",
+      "caption": "Proposal ditolak biasanya bukan karena idenya jelek — tapi nggak ada angkanya.\nCoba prompt di gambar sebelum kirim proposal berikutnya. Simpan buat nanti.\n#managermodeon #prompttips #AIuntukkerja #proposal"
+    },
+    {
+      "id": 3,
+      "type": "hook",
+      "tag": "MINDSET",
+      "headline": "Kerja keras kalah sama kerja yang kelihatan dampaknya.",
+      "sub": "Switch ke Manager Mode: ON.",
+      "caption": "Yang naik jabatan bukan yang paling capek — tapi yang kerjanya kelihatan dampaknya.\nAI bantu kamu tunjukin angka, hasil, keputusan.\nMau 5 prompt biar kerjamu kelihatan? Ketik ON di komentar 👇\n#managermodeon #karier #AIuntukkerja"
+    },
+    {
+      "id": 4,
+      "type": "before_after",
+      "tag": "BEFORE / AFTER",
+      "off": "1 jam mikirin cara balas email atasan biar nggak salah.",
+      "on": "5 menit. Sopan, tegas, jelas - dibantu AI.",
+      "caption": "OFF: 1 jam cuma buat nyusun kata di email sensitif ke atasan.\nON: 5 menit, tetap sopan & tegas. Email sulit nggak harus makan energi seharian.\n#managermodeon #budakkorporat #AIuntukkerja #email"
+    },
+    {
+      "id": 5,
+      "type": "prompt",
+      "tag": "PROMPT",
+      "kicker": "PROMPT DROP",
+      "headline": "Masuk rapat tanpa kaget.",
+      "prompt": "Bayangkan kamu atasan yang skeptis & ketat budget. Sebutkan 5 keberatan paling mungkin atas proposal ini + jawaban singkatnya: [proposalmu]",
+      "caption": "Proposal menang atau kalah di ruang rapat. Siapin jawaban sebelum ditanya pakai prompt ini.\nSimpan & pakai sebelum meeting berikutnya.\n#managermodeon #prompttips #AIuntukkerja #meeting"
+    },
+    {
+      "id": 6,
+      "type": "before_after",
+      "tag": "BEFORE / AFTER",
+      "off": "Notulen rapat berantakan, action item ke-skip.",
+      "on": "5 menit: minutes rapi + siapa ngerjain apa.",
+      "caption": "Rapat selesai, catatan berantakan, tindak lanjut lupa.\nDengan 1 workflow AI: minutes rapi + action item (PIC + tenggat) + email rekap, 5 menit.\nMau workflow-nya? Ketik ON 👇\n#managermodeon #AIuntukkerja #produktivitas"
+    },
+    {
+      "id": 7,
+      "type": "hook",
+      "tag": "RELATABLE",
+      "headline": "Jam 5 sore. Masih ngatur font di slide.",
+      "sub": "Ada cara yang lebih waras.",
+      "caption": "\"Mikir strategis\" katanya. Realita: jam 5 sore masih geser-geser kotak teks di slide.\nAI ambil alih kerjaan beginian, kamu fokus ke yang penting.\n#managermodeon #budakkorporat #relatable #AIuntukkerja"
+    },
+    {
+      "id": 8,
+      "type": "before_after",
+      "tag": "THE PROPOSAL ENGINE",
+      "off": "Data mentah numpuk, deck belum kebikin.",
+      "on": "AI baca datamu, jadi deck format kantor - siap presentasi.",
+      "caption": "Dari Excel mentah ke deck rapi dalam tone kantormu — tanpa begadang.\nItu yang dikerjakan The Proposal Engine. Link di bio kalau mau coba.\n#managermodeon #AIuntukkerja #proposal #karier"
+    }
+  ]
+}
